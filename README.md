@@ -1,11 +1,13 @@
 # SQL_Assignment
 **Q1**
+
 1)It was required to find no of males and female in each department so we used group by department and 
   count function to count the number of females and males in each department.
 2)select Department,count(case when Gender="Male" then 1 end) as Num_of_Male,count(case when Gender="Female" then 1 end) 
 as Num_of_Female from employees group by department;
 
 **Q2**
+
 1)It was required to find maximum among the rows so we used case clause to find it.
 2)SELECT name, 
 CASE
