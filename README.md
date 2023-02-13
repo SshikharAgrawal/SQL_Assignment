@@ -33,5 +33,6 @@ GROUP BY marks
 ORDER BY marks DESC;
 
 **Q4**
+
 1)It was required to get min marks for a particular emailid so we used min aggretage function and groupby metchod to do so.
 2)select min(Candidate_Id),Email from temp group by Email;
