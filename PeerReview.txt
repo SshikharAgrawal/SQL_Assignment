@@ -1,0 +1,31 @@
+**Akash's Review**
+
+Q1
+1)It was required to find no of males and female in each department so we used group by department and count function to count the number of females and males in each department.
+select Department,count(case when Gender="Male" then 1 end) as Num_of_Male,count(case when Gender="Female" then 1 end) as Num_of_Female from employees group by department;.It was kind of a similar approach as of mine.
+
+Q2)
+It was required to find maximum among the rows so we used case clause to find it.
+
+Q3)
+It was required to rank the candidates in decreasing scores and group their candidate_id accordingly so we used rank and group_concat function to do so.
+
+Q4)
+It was required to get min marks forparticular emailid so we used min aggretage function and groupby metchod to do so.He has also deleted it by creating a view.
+
+
+**Praneeth's Review**
+
+Q1)
+It was required to find no of males and female in each department so we used group by department and count function to count the number of females and males in each department.He has used the concept of procedure for it.
+
+Q2)
+It was required to find maximum among the rows so we used case clause to find it.He used procedure and delimiter for it.
+
+Q3)
+It was required to rank the candidates in decreasing scores and group their candidate_id accordingly so we used rank and group_concat function to do so.
+
+Q4)It was required to get min marks forparticular emailid so we used min aggretage function and groupby metchod to do so.He has also deleted it by creating a view.
+
+
+
