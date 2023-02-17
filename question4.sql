@@ -1,9 +1,29 @@
+CREATE TABLE email_id (
+	candidate_id int PRIMARY KEY,
+    email VARCHAR(30) NOT NULL
+);
 
-create table temp(Candidate_Id int,Email varchar(100));
-insert into temp values(45,"abc@gmail.com");
-insert into temp values(23,"def@gmail.com");
-insert into temp values(34,"abc@gmail.com");
-insert into temp values(21,"bcf@gmail.com");
-insert into temp values(94,"def@gmail.com");
 
-select min(Candidate_Id),Email from temp group by Email;
+INSERT INTO email_id VALUES(45,'abc@gmail.com');
+INSERT INTO email_id VALUES(23,'def@yahoo.com');
+INSERT INTO email_id VALUES(34,'abc@gmail.com');
+INSERT INTO email_id VALUES(21,'bcf@gmail.com');
+INSERT INTO email_id VALUES(94,'def@yahoo.com');
+
+DELETE FROM 
+  email_id 
+WHERE 
+  NOT candidate_id IN (
+    SELECT 
+      * 
+    FROM 
+      (
+        SELECT 
+          MIN(candidate_id) 
+        FROM 
+          email_id 
+        GROUP BY 
+          email
+      ) AS temp
+  );
+
