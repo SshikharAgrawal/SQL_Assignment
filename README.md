@@ -37,6 +37,18 @@ ORDER BY marks DESC;
 
 **Q4**
 
-1)It was required to get min marks for a particular emailid so we used min aggretage function and groupby metchod to do so.
-
-2)select min(Candidate_Id),Email from temp group by Email;
+1)It was required to get min marks for a particular emailid so we used min aggretage function and groupby metchod to do so by deleting it from the same table.
+2)DELETE FROM 
+  email_id WHERE 
+  NOT candidate_id IN (
+    SELECT 
+      * 
+    FROM 
+      ( SELECT 
+          MIN(candidate_id) 
+        FROM 
+          email_id 
+        GROUP BY 
+          email
+      ) AS temp
+  );
