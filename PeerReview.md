@@ -25,7 +25,8 @@ It was required to find maximum among the rows so we used case clause to find it
 Q3)
 It was required to rank the candidates in decreasing scores and group their candidate_id accordingly so we used rank and group_concat function to do so.
 
-Q4)It was required to get min marks forparticular emailid so we used min aggretage function and groupby metchod to do so.He has also deleted it by creating a view.
+Q4)He created a Working procedure in which he created a sub query which will fetch the minimum candidate id for a given email and then delete all the entry rather than that.
+
 
 
 
