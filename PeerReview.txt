@@ -1,4 +1,4 @@
-**Akash's Review**
+**Akash Review**
 
 Q1
 1)It was required to find no of males and female in each department so we used group by department and count function to count the number of females and males in each department.
@@ -14,7 +14,7 @@ Q4)
 It was required to get min marks forparticular emailid so we used min aggretage function and groupby metchod to do so.He has also deleted it by creating a view.
 
 
-**Praneeth's Review**
+**Praneeth Review**
 
 Q1)
 It was required to find no of males and female in each department so we used group by department and count function to count the number of females and males in each department.He has used the concept of procedure for it.
